@@ -31,6 +31,7 @@ alert("get talbe");
         request.open("GET", "http://localhost:8080/VehiclesOfInterestWebServices/webresources/model.vehicleofinterest", true);
         request.send();
         request.onreadystatechange = function() {
+            console.log("Request data", request.responseText.toString());
 
             if (request.readyState == 4)
             {
